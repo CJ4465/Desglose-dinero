@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="418.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.gastos_semana.GastosController">
+   <children>
+      <VBox layoutX="38.0" layoutY="63.0" prefHeight="218.0" prefWidth="147.0" spacing="10.0">
+         <children>
+            <Label text="Alimentación">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Refrigerios">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Transporte">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Telefonía">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Otros">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TextField fx:id="txtAlimentos" layoutX="185.0" layoutY="63.0" prefHeight="35.0" prefWidth="149.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtRefrigerios" layoutX="185.0" layoutY="109.0" prefHeight="35.0" prefWidth="149.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTransporte" layoutX="185.0" layoutY="153.0" prefHeight="35.0" prefWidth="149.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTelefonia" layoutX="185.0" layoutY="200.0" prefHeight="35.0" prefWidth="149.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtOtros" layoutX="185.0" layoutY="243.0" prefHeight="35.0" prefWidth="149.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="384.0" layoutY="63.0" prefHeight="230.0" prefWidth="170.0" spacing="10.0">
+         <children>
+            <Label text="Estadisticas">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Total semanal">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTotalSemanal" editable="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="10.0" layoutY="45.0" text="Costo mas alto ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtGastoAlto" editable="false" layoutX="10.0" layoutY="80.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <Button fx:id="btnCalcular" alignment="CENTER" layoutX="51.0" layoutY="310.0" mnemonicParsing="false" onAction="#calcularEstadisticas" prefHeight="66.0" prefWidth="107.0" text="Calcular&#10;estadistica" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLimpiar" alignment="CENTER" layoutX="185.0" layoutY="310.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="66.0" prefWidth="107.0" text="limpiar" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
